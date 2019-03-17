@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-gabi",
+  "version": "1.0.0",
+  "description": "Portfólio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarWilliam/portfolio-gabi.git"
+  },
+  "author": "Gabriela Vaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarWilliam/portfolio-gabi/issues"
+  },
+  "homepage": "https://github.com/CesarWilliam/portfolio-gabi#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "browser": "^0.2.6",
+    "gulp-changed": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "sync": "^0.2.5"
+  }
+}
