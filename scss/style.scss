@@ -18,10 +18,15 @@ body{
             justify-content: space-between;
             padding: 80px;
             flex-wrap: wrap;
+            scroll-snap-align: start;
 
             @media(max-width:767.98px){
                 padding: 30px 20px;
                 align-items: start;
+            }
+
+            .pink{
+                color:#F7CBC7;
             }
 
             .left{
@@ -30,6 +35,14 @@ body{
                 @media(max-width:767.98px){
                     width: 100%;
                     order: 2;
+                }
+
+                @media(min-width:768px) and (max-width:991.98px){
+                    width: 75%;
+                }
+
+                @media(min-width:992px) and (max-width:1199.98px){
+                    width: 60%;
                 }
 
                 h1{
@@ -41,6 +54,11 @@ body{
 
                     @media(max-width:767.98px){
                         font-size: 48px;
+                        text-align: center;
+                    }
+
+                    @media(min-width:768px) and (max-width:991.98px){
+                        font-size: 78px;
                     }
                 }
 
@@ -52,6 +70,7 @@ body{
 
                     @media(max-width:767.98px){
                         font-size: 18px;
+                        text-align: center;
                     }
                 }
             }
@@ -202,6 +221,33 @@ body{
                             letter-spacing: 4px;
                         }
                     }
+
+                    .habilidades{
+                        @media(max-width:767.98px){
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            p{
+                                width: 50%;
+
+                                &:nth-child(2){
+                                    padding-left: 15px;
+                                }
+
+                                &:nth-child(4){
+                                    padding-left: 15px;
+                                }
+
+                                &:nth-child(6){
+                                    padding-left: 15px;
+                                }
+
+                                &:nth-child(8){
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -217,13 +263,18 @@ body{
             height: 100vh;
             align-items: center;
 
-            @media(max-width:767.98px){
+            @media(max-width:1199.98px){
                 height: 100%;
             }
 
             .title{
                 width: 15%;
                 padding: 0 15px;
+                text-align:center;
+
+                @media(max-width:767.98px){
+                    padding-top:15px;
+                }
 
                 @media(max-width:1199.98px){
                     width: 100%;
@@ -256,21 +307,21 @@ body{
                 .projeto-box{
                     width: 25%;
                     filter: grayscale(100%);
-                    transition: transform .5s;
+                    transition: .5s;
 
-                    @media(max-width:767.98px){
+                    @media(max-width:1199.98px){
                         width: 50%;
+                        filter: grayscale(0%);
                     }
 
                     &:hover{
                         filter: grayscale(0%);
-                        transform: scale(0.99);
                         z-index:10;
                     }
 
                     .img-pro{
                         width: 100%;
-                        height: 25vh;
+                        height: 25.2vh;
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -311,6 +362,15 @@ body{
                 padding: 10px 15px 0;
             }
 
+            @media(min-width:768px) and (max-width:991.98px){
+                width: 100%;
+                padding: 10px 20px 0;
+            }
+
+            @media(min-width:992px) and (max-width:1199.98px){
+                width: 80%;
+            }
+
             p{
                 margin:0;
                 padding-bottom: 14px;
@@ -321,7 +381,7 @@ body{
             display: flex;
             width: 70%;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             margin: 0 auto;
 
             @media(max-width:767.98px){
@@ -329,8 +389,17 @@ body{
                 flex-wrap: wrap;
             }
 
+            @media(min-width:768px) and (max-width:991.98px){
+                width: 100%;
+                padding: 0 20px;
+            }
+
+            @media(min-width:992px) and (max-width:1199.98px){
+                width: 80%;
+            }
+
             div{
-                width: 25%;
+                width: auto;
                 display: flex;
                 align-items: center;
 
@@ -342,10 +411,19 @@ body{
                 p{
                     margin: 0;
                     padding-left: 10px;
+
+                    @media(max-width:767.98px){
+                        font-size: 14px;
+                    }
                 }
 
                 img{
                     display: block;
+                    width: 30px;
+
+                    @media(max-width:991.98px){
+                        width:25px;
+                    }
                 }
 
                 a{
@@ -353,8 +431,61 @@ body{
                     text-decoration: none;
                     margin: 0;
                     padding-left: 10px;
+
+                    @media(max-width:767.98px){
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
+
+    .line-1 {
+        animation: blink 1s step-end 8 backwards,
+        typewriter 3.2s .8s steps(14, end) forwards,
+        blink 1s 5s step-end 70000,
+      }
+      
+       
+      .typewriter-wrapper {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 0 0 75px;
+          div{
+              text-align: center;
+          }
+          .typewriter-text {
+            width: 0;
+            text-align: center;
+            white-space: nowrap;
+            border-right: 1px solid #fff;
+            overflow: hidden;
+            @media (max-width: 575.98px) {
+                margin: 2em auto 0 auto;
+            }
+          }
+        }
+      
+      
+      @keyframes typewriter {
+        0% {
+          width: 0;
+          border-right: 1px solid #fff;
+        }
+        100% {
+          width: 100%;
+          border-right: 1px solid #fff;
+        }
+      }
+      
+      @keyframes blink {
+        0%,
+        100% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #fff;
+        }
+      }
 }

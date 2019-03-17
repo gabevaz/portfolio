@@ -21,6 +21,7 @@
     "gulp": "^4.0.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "bootstrap": "^4.3.1",
     "browser": "^0.2.6",
     "gulp-changed": "^3.2.0",
