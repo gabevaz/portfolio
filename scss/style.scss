@@ -31,6 +31,9 @@ body{
 
             .left{
                 width: 45%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
 
                 @media(max-width:767.98px){
                     width: 100%;
@@ -51,6 +54,7 @@ body{
                     text-align: right;
                     color: #F7CBC7;
                     font-weight: 200;
+                    width: 100%;
 
                     @media(max-width:767.98px){
                         font-size: 48px;
@@ -442,30 +446,25 @@ body{
 
     .line-1 {
         animation: blink 1s step-end 8 backwards,
-        typewriter 3.2s .8s steps(14, end) forwards,
+        typewriter 3.2s .8s steps(23, end) forwards,
         blink 1s 5s step-end 70000,
-      }
+    }
       
        
-      .typewriter-wrapper {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin: 0 0 75px;
-          div{
-              text-align: center;
-          }
-          .typewriter-text {
-            width: 0;
-            text-align: center;
-            white-space: nowrap;
-            border-right: 1px solid #fff;
-            overflow: hidden;
-            @media (max-width: 575.98px) {
-                margin: 2em auto 0 auto;
-            }
-          }
+    .typewriter-wrapper {
+        text-align: center;
+        min-width: 225px;
+
+        .typewriter-text {
+        width: 0;
+        white-space: nowrap;
+        border-right: 1px solid #fff;
+        overflow: hidden;
+        @media (max-width: 575.98px) {
+            margin: 2em auto 0 auto;
         }
+        }
+    }
       
       
       @keyframes typewriter {

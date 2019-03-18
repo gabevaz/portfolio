@@ -22,7 +22,10 @@ body {
       body .custom-container .main-banner .pink {
         color: #F7CBC7; }
       body .custom-container .main-banner .left {
-        width: 45%; }
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end; }
         @media (max-width: 767.98px) {
           body .custom-container .main-banner .left {
             width: 100%;
@@ -38,7 +41,8 @@ body {
           letter-spacing: 2px;
           text-align: right;
           color: #F7CBC7;
-          font-weight: 200; }
+          font-weight: 200;
+          width: 100%; }
           @media (max-width: 767.98px) {
             body .custom-container .main-banner .left h1 {
               font-size: 48px;
@@ -312,17 +316,12 @@ body {
             body .footer .bottom div a {
               font-size: 14px; } }
   body .line-1 {
-    animation: blink 1s step-end 8 backwards, typewriter 3.2s 0.8s steps(14, end) forwards, blink 1s 5s step-end 70000; }
+    animation: blink 1s step-end 8 backwards, typewriter 3.2s 0.8s steps(23, end) forwards, blink 1s 5s step-end 70000; }
   body .typewriter-wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 75px; }
-    body .typewriter-wrapper div {
-      text-align: center; }
+    text-align: center;
+    min-width: 225px; }
     body .typewriter-wrapper .typewriter-text {
       width: 0;
-      text-align: center;
       white-space: nowrap;
       border-right: 1px solid #fff;
       overflow: hidden; }
